@@ -1,0 +1,33 @@
+#I'm learning correct syntax and practicing functions in python. 
+#For now I'm using CS as my code environment.
+
+#fixed syntactic errors
+
+import math
+def project_to_distance(point_x, point_y_distance):
+    dist_to_origin = math.sqrt(point_x ** 2 + point_y_distance ** 2)
+    scale = point_y_distance/dist_to_origin
+   
+    print point_x * scale, point_y_distance * scale
+    
+project_to_distance(2, 7)
+
+
+#polygon function
+#There are several ways to calculate the area of a regular polygon. 
+#Given the number of sides, n
+#and the length of each side, s, 
+#the polygon's area is ¼ n s2 / tan(π/n).
+
+#a regular polygon with 5 sides each of length 7 inches, has area 84.3033926289 square inches.
+
+n = 7
+
+s = 3
+
+
+import math
+a = ((0.25*n) * (s**2)) / (math.tan(math.pi/n))
+print a
+
+
