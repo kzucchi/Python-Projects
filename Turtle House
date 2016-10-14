@@ -1,0 +1,39 @@
+import turtle
+
+def draw_square():
+
+    brad=turtle.Turtle()
+    brad.shape("turtle")
+    brad.color("green")
+    brad.speed(2)
+    i=0
+    while i<=4 : 
+        brad.forward(100)
+        brad.right(90)
+        i = i + 1
+
+def draw_circle():
+    angie = turtle.Turtle()
+    angie.shape("arrow")
+    angie.color("blue")
+    angie.circle(100)
+
+def draw_triangle():
+    nasru = turtle.Turtle()
+    nasru.shape("classic")
+    nasru.color("green")
+    nasru.speed(2)
+    count = 0
+    while(count < 3):
+        nasru.forward(100)
+        nasru.left(120)
+        count = count + 1
+
+window = turtle.Screen()
+window.bgcolor("black")
+
+draw_square()
+draw_circle()
+draw_triangle()
+window.exitonclick()
+
