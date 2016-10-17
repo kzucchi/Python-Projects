@@ -1,0 +1,23 @@
+#creating a python code data scraper to use for data analysis of key companies with social media data
+
+FB.getLoginStatus(function(response) {
+    if (response.status === 'connected') {
+        var accessToken = response.authResponse.accessToken;
+    }
+  } );
+
+
+
+access_token = app_id + "|" + app_secret
+
+GET /oauth/access_token
+
+client_id={app-id}
+client_secret={app-secret}
+grant_type=client_credentials
+
+
+#more code to come here soon
+#bug on line 5 syntax regarding bracket that needs to be fixed!
+#concept from open source code from minimaxir 
+#https://github.com/minimaxir/facebook-page-post-scraper/blob/master/examples/how_to_build_facebook_scraper.ipynb
