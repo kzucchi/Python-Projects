@@ -1,0 +1,15 @@
+#Use twilio external package to send SMS text messages with Python
+#Install twilio by typing in the terminal application on mac
+
+#Macintosh and Linux Instructions
+#Macintosh and Linux systems will already have Python added in their system PATH.
+#Therefore the only step you need to take is to load up the Terminal application and type in sudo easy_install twilio and enter in your password to give easy_install permissions to write to your system folders.
+#If you want to install Twilio with pip, you may need to first install pip on your system because newer Macintosh systems and some Linux distributions may not come with pip installed.
+#Therefore, you should first install pip with sudo easy_install pip
+#You can then use pip to install Twilio with sudo pip install twilio
+#Install Verification
+#To check whether Twilio was properly installed, we enter the python command 
+#to enter the Python interpreter in the Command Prompt or Terminal application and type in these two commands:
+
+import twilio
+print(twilio.__version__)
