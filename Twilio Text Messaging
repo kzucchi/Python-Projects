@@ -1,0 +1,13 @@
+#using twilio and python to send marketing text messages
+
+from twilio.rest import TwilioRestClient
+
+#Your Account Sid and Auth Token from twilio.com/user/account
+account_sid = #type your sid here in " " from account settings
+auth_token = #type your auth token here in " " from account settings
+client = TwilioRestClient (account_sid, auth_token)
+
+message = client.sms.messages.create(
+        body="Hello from Twilio",
+        to="+#your cell phone number here",
+        from_="+#twilio phone number here")
