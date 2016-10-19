@@ -1,0 +1,15 @@
+#send text messages from twilio and print message
+
+from twilio.rest import TwilioRestClient
+
+#Your Account Sid and Auth Token from twilio.com/user/account
+account_sid = "#sid here from account page on twilio"
+auth_token = "#auth token here from twilio account"
+client = TwilioRestClient (account_sid, auth_token)
+
+message = client.sms.messages.create(
+        body="Hello from Twilio",
+        to="+#cell phone here",
+        from_="+#twilio phone here")
+
+print message.sid
