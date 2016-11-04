@@ -1,11 +1,11 @@
 import media
 
-toy_story = media.Movie("Toy Story",
-                        "A story of a boy and his toys that come to life",
-                        "https://www.google.com/search?q=toy+story&biw=1440&bih=826&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiRw77al4nQAhVIwlQKHZ92BkMQ_AUIBygC#imgrc=-Yg-tF9ba2PyBM%3A",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-
+toy_story = media.Movie ("Toy Story","A story of a boy and his toys that come to life", "http://bit.ly/2fjKVGL", "http://bit.ly/VZggnq")
+                        
 print (toy_story.storyline)
 
+avatar = media.Movie ("Avatar", "A marine lost on a island with aliens", "https://en.wikipedia.org/wiki/File:Avatar-Teaser-Poster.jpg", "http://bit.ly/2fk1rsF")
 
+print (avatar.storyline)
 
+avatar.show_trailer()
