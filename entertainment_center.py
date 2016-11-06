@@ -9,3 +9,7 @@ avatar = media.Movie ("Avatar", "A marine lost on a island with aliens", "https:
 print (avatar.storyline)
 
 avatar.show_trailer()
+
+pursuit_of_happyness = media.Movie ("Pursuit of Happyness", "A single father who pursues a career as a stockbroker", "http://bit.ly/2fodFy5", "http://bit.ly/1s2tMjQ")
+
+pursuit_of_happyness.show_trailer()
