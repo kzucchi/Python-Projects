@@ -1,7 +1,9 @@
 import webbrowser
 
 class Movie():
-    valid_ratings = ["G", "PG", "PG-13", "R"]
+    """This class provides a way to store movie related information"""
+    
+    VALID_RATINGS = ["G", "PG", "PG-13", "R"]
 #valid_ratings is a class variable
 #defined at the class level outside of the init function
 #variables inside the init function such as movie_title are instance variables    
