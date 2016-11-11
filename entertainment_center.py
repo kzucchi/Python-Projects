@@ -21,4 +21,7 @@ movies = [toy_story, avatar, pursuit_of_happyness]
 
 fresh_tomates.open_movies_page(movies)
 
+print(media.Movie.valid_ratings)
+
+
 
