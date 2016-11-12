@@ -26,4 +26,6 @@ movies = [toy_story, avatar, pursuit_of_happyness]
 print(media.Movie.__doc__)
 
 
+print(media.Movie.__name__)
 
+print(media.Movie.__module__)
